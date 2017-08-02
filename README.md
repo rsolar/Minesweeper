@@ -1,3 +1,8 @@
 # Minesweeper
-A Minesweeper game in C#.     
-Last Update: 2015.11.20
+
+Minesweeper game in C# using WinForms.
+Last Update: 2017/08/03
+
+
+
+![Pic](Pic.png)

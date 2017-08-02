@@ -8,7 +8,7 @@ namespace Minesweeper {
 
     public Form_Custom(Form_Main _Main) {
       InitializeComponent();
-      Main = _Main; //传递父窗口的实例
+      Main = _Main;
     }
 
     private void Form_Custom_Load(object sender, EventArgs e) {
@@ -21,13 +21,13 @@ namespace Minesweeper {
       Main.nRow = Convert.ToInt32(numericUpDown_Row.Value);
       Main.nCol = Convert.ToInt32(numericUpDown_Column.Value);
       Main.nMineCnt = Convert.ToInt32(numericUpDown_MineCnt.Value);
-      this.DialogResult = DialogResult.Yes;
-      this.Close();
+            DialogResult = DialogResult.Yes;
+            Close();
     }
 
     private void button_Cancel_Click(object sender, EventArgs e) {
-      this.DialogResult = DialogResult.No;
-      this.Close();
+            DialogResult = DialogResult.No;
+            Close();
     }
 
     private void numericUpDown_Row_ValueChanged(object sender, EventArgs e) {

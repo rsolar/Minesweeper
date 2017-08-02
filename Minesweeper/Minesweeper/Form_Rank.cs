@@ -9,13 +9,13 @@ namespace Minesweeper {
 
     private void Form_Rank_Load(object sender, EventArgs e) {
       //初始化内容
-      label_Easy.Text = String.Format("初级:            {0}", Properties.Settings.Default.EasyRecord);
-      label_Normal.Text = String.Format("中级:            {0}", Properties.Settings.Default.NormalRecord);
-      label_Hard.Text = String.Format("高级:            {0}", Properties.Settings.Default.HardRecord);
+      label_Easy.Text = string.Format("初级:            {0}", Properties.Settings.Default.EasyRecord);
+      label_Normal.Text = string.Format("中级:            {0}", Properties.Settings.Default.NormalRecord);
+      label_Hard.Text = string.Format("高级:            {0}", Properties.Settings.Default.HardRecord);
     }
 
     private void button_OK_Click(object sender, EventArgs e) {
-      this.Close();
+            Close();
     }
 
     private void button_Reset_Click(object sender, EventArgs e) {
@@ -25,9 +25,9 @@ namespace Minesweeper {
       Properties.Settings.Default.HardRecord = 9999;
       Properties.Settings.Default.Save();
       //更新显示内容
-      label_Easy.Text = String.Format("初级:            {0}", Properties.Settings.Default.EasyRecord);
-      label_Normal.Text = String.Format("中级:            {0}", Properties.Settings.Default.NormalRecord);
-      label_Hard.Text = String.Format("高级:            {0}", Properties.Settings.Default.HardRecord);
+      label_Easy.Text = string.Format("初级:            {0}", Properties.Settings.Default.EasyRecord);
+      label_Normal.Text = string.Format("中级:            {0}", Properties.Settings.Default.NormalRecord);
+      label_Hard.Text = string.Format("高级:            {0}", Properties.Settings.Default.HardRecord);
     }
   }
 }
